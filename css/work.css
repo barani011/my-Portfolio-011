@@ -168,6 +168,22 @@
     align-items: center;
 }
 
+.card-info1 {
+    height: 20%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+.card-info1 h3 {
+    font-family: 'Blinker', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
 .card-info h3 {
     font-family: 'Blinker', sans-serif;
     font-size: 14px;
