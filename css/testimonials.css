@@ -12,6 +12,7 @@
     margin-right: 0;
     margin-left: 110px;
     box-sizing: border-box;
+    margin-top: -40px;
 }
 
 /* Ensure the title doesn't get cut off if screen is small */

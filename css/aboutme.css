@@ -1,6 +1,9 @@
 /* --- ABOUT SECTION --- */
 .about-section { 
-    background: var(--bg-color); }
+    background: var(--bg-color);
+    margin-bottom: -160px;
+    bottom: 80px; 
+}
 
 .about-container {
     display: flex;
@@ -59,4 +62,60 @@
     justify-content: flex-end;
     gap: 30px;
     position: relative;
+}
+/* --- SLIDER CONTAINER --- */
+.about-image-slider {
+    position: relative;
+    width: 40%;
+    max-width: 500px;
+    height: 450px; /* Increased slightly for caption clearance */
+    margin: 0 auto;
+}
+
+.about-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* Total duration 16s (4s per slide) for a smoother pace */
+    animation: fadeInfinite 16s infinite; 
+}
+
+/* --- ANIMATION TIMING (4 Slides) --- */
+/* Staggering by 4s intervals (16s total / 4 slides) */
+.about-slide:nth-child(1) { animation-delay: 0s; }
+.about-slide:nth-child(2) { animation-delay: 4s; }
+.about-slide:nth-child(3) { animation-delay: 8s; }
+.about-slide:nth-child(4) { animation-delay: 12s; }
+
+/* --- KEYFRAMES --- */
+/* Optimized for 4 slides so only one is visible at a time */
+@keyframes fadeInfinite {
+    0% { opacity: 0; }
+    5% { opacity: 1; }   /* Fade in quickly */
+    20% { opacity: 1; }  /* Stay fully visible for a portion of the 4s */
+    25% { opacity: 0; }  /* Fade out before the next one starts */
+    100% { opacity: 0; }
+}
+
+/* --- IMAGE & CAPTION STYLES --- */
+.about-photo {
+    width: 100%;
+    height: 300px; /* Fixed height helps keep layout stable during transitions */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+.image-caption {
+    font-family: 'Blinker', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin: 0;
 }

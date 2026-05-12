@@ -197,15 +197,18 @@ section {
 /* --- SKILLS MARQUEE --- */
 .skills-marquee {
     position: absolute;
-    bottom: 30px; /* Sits nicely inside the 150px padding we created */
+    /* CHANGE THIS VALUE: Higher number moves it further up from the bottom */
+    bottom: 90px; 
+    
     left: 0;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     padding: 20px 0;
-    z-index: 10; /* Ensures it sits on top of background but below modals */
+    margin-top: -50px;
+    z-index: 10;
     
-    /* Optional: Mask to fade edges */
+    /* Mask to fade edges */
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
