@@ -107,17 +107,167 @@
     opacity: 0.9;
 }
 
-/* --- RESPONSIVE FIXES --- */
-@media (max-width: 900px) {
+.resume-desc {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-grey);
+    line-height: 1.6;
+    text-align: justify;
+    opacity: 0.9;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .resume-section {
+        margin-left: 0;
+        width: 100%;
+        padding: 40px 5%;
+    }
+    
     .resume-container {
         flex-direction: column;
+        gap: 30px;
     }
     
     .resume-column {
         width: 100%;
     }
     
+    .resume-column .section-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
     .resume-card {
-        padding: 25px;
+        padding: 30px;
+    }
+    
+    .timeline-item {
+        margin-bottom: 40px;
+        padding-left: 25px;
+    }
+    
+    .timeline-dot {
+        width: 14px;
+        height: 14px;
+        left: -25px;
+    }
+    
+    .resume-role {
+        font-size: 16px;
+    }
+    
+    .resume-date {
+        font-size: 13px;
+    }
+    
+    .resume-desc {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-section {
+        padding: 35px 5%;
+    }
+    
+    .resume-container {
+        gap: 25px;
+    }
+    
+    .resume-column .section-title {
+        font-size: 30px;
+    }
+    
+    .resume-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .timeline-wrapper {
+        padding-left: 15px;
+    }
+    
+    .timeline-line {
+        left: 0;
+        width: 1.5px;
+    }
+    
+    .timeline-item {
+        margin-bottom: 35px;
+        padding-left: 20px;
+    }
+    
+    .timeline-dot {
+        width: 12px;
+        height: 12px;
+        left: -22px;
+    }
+    
+    .resume-role {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    
+    .resume-date {
+        font-size: 12px;
+    }
+    
+    .resume-desc {
+        font-size: 12px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-section {
+        padding: 30px 4%;
+    }
+    
+    .resume-container {
+        gap: 20px;
+    }
+    
+    .resume-column .section-title {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    
+    .resume-card {
+        padding: 15px;
+        border-radius: 12px;
+    }
+    
+    .timeline-wrapper {
+        padding-left: 12px;
+    }
+    
+    .timeline-line {
+        width: 1px;
+    }
+    
+    .timeline-item {
+        margin-bottom: 30px;
+        padding-left: 18px;
+    }
+    
+    .timeline-dot {
+        width: 10px;
+        height: 10px;
+        left: -20px;
+        top: 3px;
+    }
+    
+    .resume-role {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    
+    .resume-date {
+        font-size: 11px;
+    }
+    
+    .resume-desc {
+        font-size: 11px;
     }
 }

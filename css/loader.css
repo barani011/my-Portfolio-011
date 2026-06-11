@@ -70,3 +70,49 @@
     opacity: 0;
     visibility: hidden;
 }
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .loader-ring {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .loader-ring::after {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        border: solid 4px #020612;
+    }
+}
+
+@media (max-width: 768px) {
+    .loader-ring {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .loader-ring::after {
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        border: solid 3px #020612;
+    }
+}
+
+@media (max-width: 480px) {
+    .loader-ring {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .loader-ring::after {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border: solid 2px #020612;
+    }
+}

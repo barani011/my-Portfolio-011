@@ -119,3 +119,157 @@
     letter-spacing: 0.5px;
     margin: 0;
 }
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .about-section {
+        margin-bottom: 0;
+        bottom: auto;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-left, .about-right {
+        flex: 1;
+        max-width: 100%;
+    }
+    
+    .section-title {
+        font-size: 48px;
+    }
+    
+    .about-desc {
+        font-size: 16px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    
+    .timeline-list {
+        gap: 80px;
+        text-align: left;
+    }
+    
+    .about-right {
+        padding-right: 0;
+        margin-top: 30px;
+    }
+    
+    .about-image-slider {
+        width: 100%;
+        max-width: 400px;
+        height: 350px;
+    }
+    
+    .about-photo {
+        height: 250px;
+    }
+    
+    .image-caption {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 5%;
+    }
+    
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .about-desc {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .info-grid {
+        row-gap: 15px;
+    }
+    
+    .info-group .label {
+        font-size: 12px;
+    }
+    
+    .info-group .value {
+        font-size: 16px;
+    }
+    
+    .timeline-list {
+        gap: 60px;
+        text-align: left;
+    }
+    
+    .timeline-list li {
+        gap: 20px;
+    }
+    
+    .about-image-slider {
+        height: 300px;
+        max-width: 100%;
+    }
+    
+    .about-photo {
+        height: 200px;
+    }
+    
+    .image-caption {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 30px 4%;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .about-desc {
+        font-size: 13px;
+        text-align: left;
+        line-height: 1.5;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+    }
+    
+    .info-group .label {
+        font-size: 11px;
+    }
+    
+    .info-group .value {
+        font-size: 14px;
+    }
+    
+    .timeline-list {
+        gap: 40px;
+    }
+    
+    .timeline-list li {
+        gap: 15px;
+    }
+    
+    .about-image-slider {
+        height: 250px;
+    }
+    
+    .about-photo {
+        height: 150px;
+    }
+    
+    .image-caption {
+        font-size: 12px;
+    }
+}

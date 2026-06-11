@@ -119,8 +119,146 @@ input:focus, textarea:focus {
 .icon-4 { top: 1%; left: -10px; }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 600px) {
-    .contact-section { margin-left: 0; }
-    .contact-card { padding: 30px 20px; }
-    .form-row { flex-direction: column; gap: 0; } /* Stack names on mobile */
+@media (max-width: 1024px) {
+    .contact-section {
+        margin-left: 0;
+        padding: 50px 5%;
+        margin-top: 0;
+    }
+    
+    .contact-section .section-title {
+        font-size: 48px;
+    }
+    
+    .contact-card {
+        padding: 40px 30px;
+        max-width: 600px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-row .form-group {
+        width: 100%;
+    }
+    
+    .bg-icon {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 40px 5%;
+    }
+    
+    .contact-section .section-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .contact-card {
+        padding: 30px 20px;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-row .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    label {
+        font-size: 13px;
+    }
+    
+    input, textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+        border-radius: 6px;
+    }
+    
+    .submit-btn {
+        padding: 10px 35px;
+        font-size: 13px;
+        border-radius: 15px;
+    }
+    
+    .bg-icon {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 30px 4%;
+        margin-left: 0;
+    }
+    
+    .contact-section .section-title {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-card {
+        padding: 20px 15px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .form-group {
+        margin-bottom: 12px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 12px;
+    }
+    
+    label {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .red-star {
+        margin-left: 2px;
+    }
+    
+    input, textarea {
+        padding: 8px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    
+    input::placeholder, textarea::placeholder {
+        font-size: 11px;
+    }
+    
+    .form-btn-container {
+        margin-top: 8px;
+    }
+    
+    .submit-btn {
+        padding: 8px 25px;
+        font-size: 12px;
+        border-radius: 12px;
+    }
+    
+    .bg-icon {
+        font-size: 30px;
+        opacity: 0.02;
+    }
+    
+    .icon-1 { top: 5px; right: -25px; }
+    .icon-2 { bottom: 5px; left: -30px; font-size: 50px; }
+    .icon-3 { bottom: 10px; right: -15px; }
+    .icon-4 { top: 0%; left: -15px; }
 }
