@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokix.in - Portfolio</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Blinker:wght@300;400;600&family=Braah+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+<script type="text/javascript">
+   (function(){
+      // REPLACE 'YOUR_PUBLIC_KEY' WITH YOUR ACTUAL KEY FROM EMAILJS
+      emailjs.init("BLlx8zBGDVK-rTgqU"); 
+   })();
+</script>
+</head>
+<body>
+    
+    <div class="loader-wrapper" id="loader">
+    <div class="loader-ring">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+    <div class="main-container">
+<header class="main-header">
+    <div class="header-logo">
+        <a href="about.html">Lokix<span>.</span> in</a>
+    </div>
+
+    <nav class="nav-menu">
+        <a href="about.html#about" class="nav-btn">ABOUT</a>
+        <a href="about.html#services" class="nav-btn">SERVICE</a>
+        <a href="projectinfo.html" class="nav-btn">WORKS</a>
+        <a href="about.html#contact-form" class="nav-btn">CONTACT</a>
+    </nav>
+
+    <a href="about.html#contact-form" class="header-contact">
+        Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+</header>
+    
+
+        <main class="content-area">
+        
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    
+        <div class="image-box">
+    
+              <div class="glow-circle"></div>
+
+               <img src="assets/dp11.png" alt="Baraninathan S P" class="profile-img">
+        </div>
+
+                    <div class="text-box">
+                        <h2 class="slide-up delay-1">Hello<span class="dot">.</span></h2>
+                        
+                        <div class="name-wrapper slide-up delay-2">
+                            <h1>I’m Baraninathan S P</h1>
+                            <div class="underline"></div>
+                        </div>
+
+                        <p class="bio slide-up delay-3">
+                            I’m a freelance web developer and UI/UX designer passionate about building modern, user-friendly websites for clients. I specialize in transforming ideas into clean, functional, and visually engaging digital experiences. In addition to web development, I have hands-on experience in deep learning and computer vision, developing intelligent solutions using image and video data. Recognized for innovation with a published patent and as a VISAI competition winner. <strong>#PatentPublished #VISAI2016 Winner</strong>
+                        </p>
+
+                        <div class="buttons slide-up delay-4">
+                            <a href="#about" class="btn btn-outline">About me</a>
+                            <a href="assets/pdf/BARANINATHAN AIML resume.pdf" class="btn btn-fill" download>Download CV</a>
+    <a href="https://github.com/barani011" target="_blank" class="github-icon-btn">
+        <i class="fa-brands fa-github"></i>
+    </a>  
+    <a href="https://www.linkedin.com/in/baraninathan-s-p-030543313/" target="_blank" class="github-icon-btn">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>                        
+</div>
+                    </div>
+                </div>
+
+                <div class="skills-marquee">
+                    <div class="marquee-content">
+                        <span>HTML</span><span>CSS</span><span>Python</span><span>MySQL</span><span></span><span>GitHub</span><span>Figma</span><span>Linux</span><span>AI/ML</span>
+                        <span>HTML</span><span>CSS</span><span>Python</span><span>MySQL</span><span></span><span>GitHub</span><span>Figma</span><span>Linux</span><span>AI/ML</span>
+                    </div>
+                </div>
+            </section>
+
+
+<script>
+    // Function 1: Click to Open/Close
+    function toggleShare() {
+        const popup = document.getElementById("sharePopup");
+        const shareIcon = document.querySelector(".share-icon i");
+        
+        popup.classList.toggle("active");
+        
+        // Toggle Icon between Share and X
+        if (popup.classList.contains("active")) {
+            shareIcon.classList.remove("fa-share-nodes");
+            shareIcon.classList.add("fa-xmark");
+        } else {
+            shareIcon.classList.remove("fa-xmark");
+            shareIcon.classList.add("fa-share-nodes");
+        }
+    }
+
+    // Function 2: Auto-Close on Mouse Leave
+    function closeShare() {
+        const popup = document.getElementById("sharePopup");
+        const shareIcon = document.querySelector(".share-icon i");
+
+        // Only close if it is currently open
+        if (popup.classList.contains("active")) {
+            popup.classList.remove("active");
+            
+            // Reset icon back to Share
+            shareIcon.classList.remove("fa-xmark");
+            shareIcon.classList.add("fa-share-nodes");
+        }
+    }
+</script>
+
+<script>
+    window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.classList.add("loader-hidden");
+        loader.addEventListener("transitionend", function() {
+            if(document.body.contains(loader)) {
+                document.body.removeChild(loader);
+            }
+        });
+    });
+</script>
+
+<script>
+    function sendEmail(e) {
+        e.preventDefault(); // Stop page refresh
+
+        // Update button text to show loading
+        const btn = document.querySelector('.submit-btn');
+        const originalText = btn.innerText;
+        btn.innerText = "SENDING...";
+
+        // REPLACE THESE WITH YOUR IDs FROM EMAILJS DASHBOARD
+        const serviceID = "service_p1evx8i";
+        const templateID = "template_kjblpe9";
+
+        emailjs.sendForm(serviceID, templateID, "#contactForm")
+            .then(() => {
+                btn.innerText = "SENT!";
+                alert("Message Sent Successfully!");
+                document.getElementById("contactForm").reset(); // Clear form
+                setTimeout(() => btn.innerText = originalText, 3000);
+            }, (err) => {
+                btn.innerText = originalText;
+                alert("Failed to send. Error: " + JSON.stringify(err));
+            });
+    }
+</script>
+
+<script>
+    function scrollTestimonialsRight() {
+        const slider = document.getElementById('testimonialSlider');
+        slider.scrollBy({ left: 380, behavior: 'smooth' });
+    }
+</script>
+<script>
+    // Select all sections and nav links
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    // Options for the observer (triggers when 50% of section is visible)
+    const options = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Get the id of the section currently on screen
+                const id = entry.target.getAttribute('id');
+                
+                // Remove 'active' class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Add 'active' class to the matching link
+                const activeLink = document.querySelector(`.nav-menu a[href="#${id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        });
+    }, options);
+
+    // Start observing each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+</body>
+
+<script>
+    function scrollTestimonialsRight() {
+        const slider = document.getElementById('testimonialSlider');
+        // Scrolls by 1 card width + gap
+        slider.scrollBy({ left: 380, behavior: 'smooth' });
+    }
+</script>
+
+<script>
+    // 1. SCROLL FUNCTION
+    function scrollSliderRight() {
+        const slider = document.getElementById('workSlider');
+        // Scroll by 345px (Card width + gap) smoothly
+        slider.scrollBy({ left: 345, behavior: 'smooth' });
+    }
+
+    // 2. FILTER FUNCTION
+    
+function filterWorks(category, btn) {
+
+    // Update active filter button
+    document.querySelectorAll('.filter-pill').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    btn.classList.add('active');
+
+    // Filter project cards
+    const cards = document.querySelectorAll(
+        '#workSlider .work-card'
+    );
+
+    cards.forEach(card => {
+        const cardCategory = card.dataset.category;
+
+        if (category === 'all' || cardCategory === category) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+</script>
+</body>
+</html>

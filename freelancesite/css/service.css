@@ -1,0 +1,182 @@
+
+/* --- SERVICE SECTION --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.container-content {
+    width: 100%;
+    margin-top: 0; /* Changed from -650px to 0 */
+}
+
+.service-card {
+    background-color: #040914;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(244, 20, 20, 0.3);
+}
+
+.service-title {
+    font-family: var(--font-sub);
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Red underline for service titles */
+.service-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin-top: 5px;
+}
+
+.service-desc {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-grey);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .skills-section, .services-section {
+        margin-left: 0;
+        width: 100%;
+        padding: 40px 5%;
+    }
+    
+    .skills-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .service-card {
+        padding: 25px;
+    }
+    
+    .service-title {
+        font-size: 20px;
+    }
+    
+    .service-desc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-section, .services-section {
+        padding: 35px 5%;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+    
+    .service-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .service-title::after {
+        height: 2px;
+        margin-top: 4px;
+    }
+    
+    .service-desc {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section, .services-section {
+        padding: 30px 4%;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .service-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .service-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .service-title::after {
+        height: 1.5px;
+        margin-top: 3px;
+    }
+    
+    .service-desc {
+        font-size: 12px;
+        text-align: left;
+        line-height: 1.4;
+    }
+}
+
+/* From Uiverse.io by ArturCodeCraft */ 
+/* <reset-style> ============================ */
+a {
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* <main-style> ============================ */
+.menu__link {
+  color: #0e85f5;
+  line-height: 2;
+  position: relative;
+  padding-right: 4px;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.menu__link::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px #0099ff;
+  border-right: solid 2px #fff;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform .4s;
+}
+
+.menu__link:hover::before {
+  transform: translateX(4px) translateY(-50%) rotate(45deg);
+}

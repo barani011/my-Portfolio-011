@@ -1,0 +1,200 @@
+
+/* =================================
+   TOP NAVIGATION HEADER
+================================= */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 85px;
+    padding: 12px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+
+.header-logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Braah One', sans-serif;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.header-logo span {
+    color: #F41414;
+}
+
+/* NAVIGATION */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* NAVIGATION BUTTONS */
+
+.nav-menu .nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 23px;
+    background: #111827;
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 30px;
+
+    color: #ffffff;
+    font-family: 'Blinker', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.nav-menu .nav-btn:hover {
+    background: #F41414;
+    border-color: #F41414;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 18px rgba(244,20,20,0.25);
+}
+
+/* ACTIVE */
+
+.nav-menu .nav-btn.active {
+    background: #F41414;
+    border-color: #F41414;
+    color: #ffffff;
+}
+
+/* CONTACT BUTTON */
+
+.header-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 23px;
+    background: #F41414;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Blinker', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.header-contact:hover {
+    background: #ffffff;
+    color: #F41414;
+    transform: translateY(-3px);
+}
+
+/* MAIN CONTENT TOP SPACE */
+
+.main-container {
+    padding-top: 85px;
+}
+
+/* =================================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .main-header {
+        padding: 12px 3%;
+        gap: 15px;
+    }
+
+    .header-logo a {
+        font-size: 22px;
+    }
+
+    .nav-menu {
+        gap: 7px;
+    }
+
+    .nav-menu .nav-btn {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .header-contact {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+}
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    .main-header {
+        min-height: auto;
+        padding: 12px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .header-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-logo a {
+        font-size: 23px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .nav-menu .nav-btn {
+        padding: 8px 12px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+    .main-container {
+        padding-top: 105px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .nav-menu {
+        gap: 4px;
+    }
+
+    .nav-menu .nav-btn {
+        padding: 7px 9px;
+        font-size: 9px;
+    }
+}
